@@ -20,6 +20,7 @@ RUN git clone https://github.com/tesseract-ocr/tesseract.git \
 
 RUN git clone https://github.com/tesseract-ocr/tessdata.git \
   && cd tessdata \
+  # IDEA: try cloning directly into /usr/local/share/tessdata?
   && mv * /usr/local/share/tessdata
 
 WORKDIR /code
